@@ -37,6 +37,8 @@
 		1FCA78202BF215300052FDA7 /* CameraNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA781F2BF215300052FDA7 /* CameraNav.swift */; };
 		1FCA78222BF215400052FDA7 /* ChatsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78212BF215400052FDA7 /* ChatsNav.swift */; };
 		1FCA78242BF215500052FDA7 /* SettingsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78232BF215500052FDA7 /* SettingsNav.swift */; };
+		1FCA78282BF21A000052FDA7 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78262BF21A000052FDA7 /* CallTableViewCell.swift */; };
+		1FCA78292BF21A000052FDA7 /* CallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78272BF21A000052FDA7 /* CallTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		1FCA781F2BF215300052FDA7 /* CameraNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraNav.swift; sourceTree = "<group>"; };
 		1FCA78212BF215400052FDA7 /* ChatsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsNav.swift; sourceTree = "<group>"; };
 		1FCA78232BF215500052FDA7 /* SettingsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNav.swift; sourceTree = "<group>"; };
+		1FCA78262BF21A000052FDA7 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
+		1FCA78272BF21A000052FDA7 /* CallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallTableViewCell.xib; sourceTree = "<group>"; };
 		2D9634B22E76A8D1A304125E /* Pods_WhatsApp_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8ED44401A3D22AE58D11DD /* Pods-WhatsApp-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp-Clone.release.xcconfig"; path = "Target Support Files/Pods-WhatsApp-Clone/Pods-WhatsApp-Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,9 +193,9 @@
 		1F234F2A2BF1E2A700228C4D /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				1F234F1B2BF1E06B00228C4D /* LaunchScreen.storyboard */,
 				1F234F162BF1E06700228C4D /* Login.storyboard */,
 				1F234F352BF1F5FD00228C4D /* Main.storyboard */,
-				1F234F1B2BF1E06B00228C4D /* LaunchScreen.storyboard */,
 				1FCA78022BF211400052FDA7 /* Status.storyboard */,
 				1FCA78042BF211520052FDA7 /* Calls.storyboard */,
 				1FCA78062BF211630052FDA7 /* Camera.storyboard */,
@@ -258,7 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				1FCA781D2BF2151A0052FDA7 /* CallsNav.swift */,
-				1FCA78132BF214180052FDA7 /* CallsVC.swift */,
+				1FCA78252BF219D30052FDA7 /* View */,
 			);
 			path = Calls;
 			sourceTree = "<group>";
@@ -270,6 +274,16 @@
 				1FCA78112BF214070052FDA7 /* StatusVC.swift */,
 			);
 			path = Status;
+			sourceTree = "<group>";
+		};
+		1FCA78252BF219D30052FDA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA78132BF214180052FDA7 /* CallsVC.swift */,
+				1FCA78262BF21A000052FDA7 /* CallTableViewCell.swift */,
+				1FCA78272BF21A000052FDA7 /* CallTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		93861F06FEAE95D090FB0F1F /* Frameworks */ = {
@@ -341,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F234F1A2BF1E06B00228C4D /* Assets.xcassets in Resources */,
+				1FCA78292BF21A000052FDA7 /* CallTableViewCell.xib in Resources */,
 				1FCA78072BF211630052FDA7 /* Camera.storyboard in Resources */,
 				1FCA78092BF211740052FDA7 /* Chats.storyboard in Resources */,
 				1F234F1D2BF1E06B00228C4D /* Base in Resources */,
@@ -401,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA78282BF21A000052FDA7 /* CallTableViewCell.swift in Sources */,
 				1F234F3A2BF1F71000228C4D /* AppStoryboard.swift in Sources */,
 				1F234F312BF1ED9300228C4D /* ValidationManager.swift in Sources */,
 				1F234F152BF1E06700228C4D /* LoginVC.swift in Sources */,

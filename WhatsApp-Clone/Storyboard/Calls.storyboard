@@ -15,10 +15,46 @@
                     <view key="view" contentMode="scaleToFill" id="UoT-Op-lZN">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3bS-Mg-g3A">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="x6R-EJ-bKP" id="Myd-Iv-Mik"/>
+                                    <outlet property="delegate" destination="x6R-EJ-bKP" id="uko-NX-gxH"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="m1a-Po-MH9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="m1a-Po-MH9" firstAttribute="bottom" secondItem="3bS-Mg-g3A" secondAttribute="bottom" id="1LL-N6-7qC"/>
+                            <constraint firstItem="3bS-Mg-g3A" firstAttribute="leading" secondItem="m1a-Po-MH9" secondAttribute="leading" id="fLC-zA-uXH"/>
+                            <constraint firstItem="m1a-Po-MH9" firstAttribute="trailing" secondItem="3bS-Mg-g3A" secondAttribute="trailing" id="kCh-la-UyV"/>
+                            <constraint firstItem="3bS-Mg-g3A" firstAttribute="top" secondItem="m1a-Po-MH9" secondAttribute="top" id="kei-NB-xPu"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9yl-eb-rYn"/>
+                    <navigationItem key="navigationItem" id="9yl-eb-rYn">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Edit" style="plain" id="BJB-NU-gK2">
+                            <connections>
+                                <action selector="editCallBtnClick:" destination="x6R-EJ-bKP" id="cXe-ya-hRu"/>
+                            </connections>
+                        </barButtonItem>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="Mvt-bj-Kbk">
+                            <rect key="frame" x="133" y="5.6666666666666679" width="127" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="All"/>
+                                <segment title="Missed"/>
+                            </segments>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Clear" id="xgS-4n-iH2"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="callSegment" destination="Mvt-bj-Kbk" id="NRM-YU-FoF"/>
+                        <outlet property="callsTableView" destination="3bS-Mg-g3A" id="9rq-Ey-kFV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P5I-2d-fGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

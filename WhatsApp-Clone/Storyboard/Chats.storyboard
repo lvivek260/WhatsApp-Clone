@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--ChatsVC-->
+        <!--Chats-->
         <scene sceneID="H48-lD-Nxs">
             <objects>
                 <viewController storyboardIdentifier="ChatsVC" id="qzR-oN-xKt" customClass="ChatsVC" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,10 @@
                         <viewLayoutGuide key="safeArea" id="UrH-eW-uzf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Qwf-e3-PYc"/>
+                    <navigationItem key="navigationItem" title="Chats" id="oKd-id-p9n">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="bhJ-Os-AoM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="compose" id="i07-xY-LvK"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASb-da-1uT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
