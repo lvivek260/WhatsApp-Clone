@@ -8,22 +8,39 @@
 import UIKit
 
 class CameraVC: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // Create a view
+        let subview1 = UIView()
+        subview1.backgroundColor = .blue
+        subview1.translatesAutoresizingMaskIntoConstraints = false // Important for programmatically adding constraints
+        
+        let subview2 = UIView()
+        subview2.backgroundColor = .orange
+        subview2.translatesAutoresizingMaskIntoConstraints = false // Important for programmatically adding constraints
+        
+        // Add the subview to the main view
+        view.addSubview(subview1)
+        view.addSubview(subview2)
+        
+        // Define constraints
+        NSLayoutConstraint.activate([
+            subview1.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0),
+            subview1.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            subview1.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            subview1.heightAnchor.constraint(equalToConstant: 200)
+        ])
+        
+        NSLayoutConstraint.activate([
+            subview2.topAnchor.constraint(equalTo: subview1.bottomAnchor, constant: 20),
+            subview2.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            subview2.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            subview2.heightAnchor.constraint(equalToConstant: 200)
+        ])
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
+
+
