@@ -23,6 +23,11 @@ class LoginVC: UIViewController {
         doneBtn.isEnabled = false
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        txtPhoneNumber.becomeFirstResponder()
+    }
+    
     @IBAction func didPhoneNumberCharChange(_ sender: UITextField) {
         doneBtn.isEnabled = (sender.text?.count == 10)
     }
