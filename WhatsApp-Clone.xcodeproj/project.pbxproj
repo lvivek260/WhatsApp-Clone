@@ -22,6 +22,21 @@
 		1F234F3A2BF1F71000228C4D /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F234F392BF1F71000228C4D /* AppStoryboard.swift */; };
 		1F234F3D2BF1F72F00228C4D /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F234F3B2BF1F72F00228C4D /* Cell+Extension.swift */; };
 		1F234F3E2BF1F72F00228C4D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F234F3C2BF1F72F00228C4D /* UIViewController+Extension.swift */; };
+		1FCA78032BF211400052FDA7 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78022BF211400052FDA7 /* Status.storyboard */; };
+		1FCA78052BF211520052FDA7 /* Calls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78042BF211520052FDA7 /* Calls.storyboard */; };
+		1FCA78072BF211630052FDA7 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78062BF211630052FDA7 /* Camera.storyboard */; };
+		1FCA78092BF211740052FDA7 /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78082BF211740052FDA7 /* Chats.storyboard */; };
+		1FCA780B2BF2118B0052FDA7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA780A2BF2118B0052FDA7 /* Settings.storyboard */; };
+		1FCA78122BF214070052FDA7 /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78112BF214070052FDA7 /* StatusVC.swift */; };
+		1FCA78142BF214180052FDA7 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78132BF214180052FDA7 /* CallsVC.swift */; };
+		1FCA78162BF214340052FDA7 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78152BF214340052FDA7 /* CameraVC.swift */; };
+		1FCA78182BF214410052FDA7 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78172BF214410052FDA7 /* ChatsVC.swift */; };
+		1FCA781A2BF214520052FDA7 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78192BF214520052FDA7 /* SettingsVC.swift */; };
+		1FCA781C2BF215050052FDA7 /* StatusNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA781B2BF215050052FDA7 /* StatusNav.swift */; };
+		1FCA781E2BF2151A0052FDA7 /* CallsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA781D2BF2151A0052FDA7 /* CallsNav.swift */; };
+		1FCA78202BF215300052FDA7 /* CameraNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA781F2BF215300052FDA7 /* CameraNav.swift */; };
+		1FCA78222BF215400052FDA7 /* ChatsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78212BF215400052FDA7 /* ChatsNav.swift */; };
+		1FCA78242BF215500052FDA7 /* SettingsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78232BF215500052FDA7 /* SettingsNav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +57,21 @@
 		1F234F3B2BF1F72F00228C4D /* Cell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
 		1F234F3C2BF1F72F00228C4D /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		1F9EA635DA885C2963509C7D /* Pods-WhatsApp-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp-Clone.debug.xcconfig"; path = "Target Support Files/Pods-WhatsApp-Clone/Pods-WhatsApp-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		1FCA78022BF211400052FDA7 /* Status.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
+		1FCA78042BF211520052FDA7 /* Calls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calls.storyboard; sourceTree = "<group>"; };
+		1FCA78062BF211630052FDA7 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		1FCA78082BF211740052FDA7 /* Chats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chats.storyboard; sourceTree = "<group>"; };
+		1FCA780A2BF2118B0052FDA7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		1FCA78112BF214070052FDA7 /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
+		1FCA78132BF214180052FDA7 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
+		1FCA78152BF214340052FDA7 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		1FCA78172BF214410052FDA7 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
+		1FCA78192BF214520052FDA7 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		1FCA781B2BF215050052FDA7 /* StatusNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusNav.swift; sourceTree = "<group>"; };
+		1FCA781D2BF2151A0052FDA7 /* CallsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsNav.swift; sourceTree = "<group>"; };
+		1FCA781F2BF215300052FDA7 /* CameraNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraNav.swift; sourceTree = "<group>"; };
+		1FCA78212BF215400052FDA7 /* ChatsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsNav.swift; sourceTree = "<group>"; };
+		1FCA78232BF215500052FDA7 /* SettingsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNav.swift; sourceTree = "<group>"; };
 		2D9634B22E76A8D1A304125E /* Pods_WhatsApp_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8ED44401A3D22AE58D11DD /* Pods-WhatsApp-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp-Clone.release.xcconfig"; path = "Target Support Files/Pods-WhatsApp-Clone/Pods-WhatsApp-Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,8 +151,13 @@
 		1F234F262BF1E26300228C4D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				1F234F372BF1F6C300228C4D /* TabBarController.swift */,
 				1F234F322BF1F04B00228C4D /* Login */,
+				1F234F372BF1F6C300228C4D /* TabBarController.swift */,
+				1FCA78102BF213C30052FDA7 /* Status */,
+				1FCA780F2BF213C00052FDA7 /* Calls */,
+				1FCA780E2BF213BD0052FDA7 /* Camera */,
+				1FCA780D2BF213BB0052FDA7 /* Chats */,
+				1FCA780C2BF213B80052FDA7 /* Settings */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -157,6 +192,11 @@
 				1F234F162BF1E06700228C4D /* Login.storyboard */,
 				1F234F352BF1F5FD00228C4D /* Main.storyboard */,
 				1F234F1B2BF1E06B00228C4D /* LaunchScreen.storyboard */,
+				1FCA78022BF211400052FDA7 /* Status.storyboard */,
+				1FCA78042BF211520052FDA7 /* Calls.storyboard */,
+				1FCA78062BF211630052FDA7 /* Camera.storyboard */,
+				1FCA78082BF211740052FDA7 /* Chats.storyboard */,
+				1FCA780A2BF2118B0052FDA7 /* Settings.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -185,6 +225,51 @@
 				1F234F332BF1F06B00228C4D /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		1FCA780C2BF213B80052FDA7 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA78232BF215500052FDA7 /* SettingsNav.swift */,
+				1FCA78192BF214520052FDA7 /* SettingsVC.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1FCA780D2BF213BB0052FDA7 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA78212BF215400052FDA7 /* ChatsNav.swift */,
+				1FCA78172BF214410052FDA7 /* ChatsVC.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
+		1FCA780E2BF213BD0052FDA7 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA781F2BF215300052FDA7 /* CameraNav.swift */,
+				1FCA78152BF214340052FDA7 /* CameraVC.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		1FCA780F2BF213C00052FDA7 /* Calls */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA781D2BF2151A0052FDA7 /* CallsNav.swift */,
+				1FCA78132BF214180052FDA7 /* CallsVC.swift */,
+			);
+			path = Calls;
+			sourceTree = "<group>";
+		};
+		1FCA78102BF213C30052FDA7 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA781B2BF215050052FDA7 /* StatusNav.swift */,
+				1FCA78112BF214070052FDA7 /* StatusVC.swift */,
+			);
+			path = Status;
 			sourceTree = "<group>";
 		};
 		93861F06FEAE95D090FB0F1F /* Frameworks */ = {
@@ -256,7 +341,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F234F1A2BF1E06B00228C4D /* Assets.xcassets in Resources */,
+				1FCA78072BF211630052FDA7 /* Camera.storyboard in Resources */,
+				1FCA78092BF211740052FDA7 /* Chats.storyboard in Resources */,
 				1F234F1D2BF1E06B00228C4D /* Base in Resources */,
+				1FCA78052BF211520052FDA7 /* Calls.storyboard in Resources */,
+				1FCA78032BF211400052FDA7 /* Status.storyboard in Resources */,
+				1FCA780B2BF2118B0052FDA7 /* Settings.storyboard in Resources */,
 				1F234F182BF1E06700228C4D /* Base in Resources */,
 				1F234F362BF1F5FD00228C4D /* Main.storyboard in Resources */,
 			);
@@ -314,13 +404,23 @@
 				1F234F3A2BF1F71000228C4D /* AppStoryboard.swift in Sources */,
 				1F234F312BF1ED9300228C4D /* ValidationManager.swift in Sources */,
 				1F234F152BF1E06700228C4D /* LoginVC.swift in Sources */,
+				1FCA781C2BF215050052FDA7 /* StatusNav.swift in Sources */,
 				1F234F342BF1F06B00228C4D /* LoginViewModel.swift in Sources */,
+				1FCA78182BF214410052FDA7 /* ChatsVC.swift in Sources */,
+				1FCA78242BF215500052FDA7 /* SettingsNav.swift in Sources */,
 				1F234F3D2BF1F72F00228C4D /* Cell+Extension.swift in Sources */,
 				1F234F112BF1E06700228C4D /* AppDelegate.swift in Sources */,
+				1FCA78222BF215400052FDA7 /* ChatsNav.swift in Sources */,
 				1F234F382BF1F6C300228C4D /* TabBarController.swift in Sources */,
 				1F234F132BF1E06700228C4D /* SceneDelegate.swift in Sources */,
+				1FCA78142BF214180052FDA7 /* CallsVC.swift in Sources */,
 				1F234F3E2BF1F72F00228C4D /* UIViewController+Extension.swift in Sources */,
+				1FCA78162BF214340052FDA7 /* CameraVC.swift in Sources */,
+				1FCA78122BF214070052FDA7 /* StatusVC.swift in Sources */,
+				1FCA78202BF215300052FDA7 /* CameraNav.swift in Sources */,
+				1FCA781E2BF2151A0052FDA7 /* CallsNav.swift in Sources */,
 				1F234F2F2BF1ED8300228C4D /* RestrictCharacter.swift in Sources */,
+				1FCA781A2BF214520052FDA7 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
