@@ -83,6 +83,7 @@ extension ChatsVC: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let chatDetailVC = AppStoryboard.chats.getViewController(ChatDetailVC.self)
         chatDetailVC.hidesBottomBarWhenPushed = true
+        chatDetailVC.chatData = viewModel.chats[indexPath.row]
         self.navigationController?.pushViewController(chatDetailVC, animated: true)
     }
 }

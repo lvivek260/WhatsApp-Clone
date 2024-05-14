@@ -9,6 +9,15 @@ import UIKit
 
 class ChatDetailHeader: UIView {
     @IBOutlet var containerView: UIView!
+    @IBOutlet weak var profileImg: UIImageView!
+    @IBOutlet weak var lblName: UILabel!
+    
+    var chatData: ChatModel?{
+        didSet{
+            profileImg.image = chatData?.image
+            lblName.text = chatData?.userName
+        }
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)

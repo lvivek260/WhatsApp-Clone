@@ -11,6 +11,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatDetailHeader" customModule="WhatsApp_Clone" customModuleProvider="target">
             <connections>
                 <outlet property="containerView" destination="4BJ-nC-hGD" id="a9f-2G-WBX"/>
+                <outlet property="lblName" destination="GXj-I8-wvY" id="bsh-3O-CrX"/>
+                <outlet property="profileImg" destination="HXp-V4-F0r" id="cWx-mb-clJ"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -74,7 +76,7 @@
     <resources>
         <image name="myImage" width="1080" height="1080"/>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

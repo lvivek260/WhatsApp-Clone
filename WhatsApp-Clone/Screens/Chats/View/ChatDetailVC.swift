@@ -8,14 +8,16 @@
 import UIKit
 
 class ChatDetailVC: UIViewController {
+    var chatData: ChatModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        addNavigationTitleHeaderView()
+    }
+    
+    private func addNavigationTitleHeaderView(){
         let chatDetailHeader = ChatDetailHeader(frame: .init(x: 0, y: 0, width:  200, height: 100))
-        let myView = UIView(frame: .init(x: 0, y: 0, width: 200, height: 100))
-        myView.backgroundColor = .red
+        chatDetailHeader.chatData = self.chatData
         navigationItem.titleView = chatDetailHeader
     }
-
-
 }

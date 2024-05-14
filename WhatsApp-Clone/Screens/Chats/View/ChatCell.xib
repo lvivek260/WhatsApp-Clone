@@ -29,7 +29,7 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GDA-lw-JQs">
-                                <rect key="frame" x="64" y="27" width="281" height="57"/>
+                                <rect key="frame" x="64" y="34" width="281" height="43.333333333333343"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-SU-UVQ">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="19.333333333333332"/>
@@ -48,12 +48,24 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actually I wanted to check with you about your online business plan on our…" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-UU-lNV">
-                                        <rect key="frame" x="0.0" y="23.333333333333339" width="281" height="33.666666666666657"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" systemColor="secondaryLabelColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7JY-8q-seC">
+                                        <rect key="frame" x="0.0" y="23.333333333333329" width="281" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8RN-tN-a6h">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="7Ay-yE-KYZ"/>
+                                                    <constraint firstAttribute="height" constant="20" id="TYn-Bk-T7G"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actually I wanted to check with you about your online business plan on our…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI3-UU-lNV">
+                                                <rect key="frame" x="24" y="1.3333333333333428" width="257" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="tB9-3Y-0EV">
@@ -75,6 +87,13 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgView" destination="VZk-oC-ry2" id="0ug-Ek-q6J"/>
+                <outlet property="lblDate" destination="To4-Ga-jse" id="9ka-y4-43Y"/>
+                <outlet property="lblMsgText" destination="bI3-UU-lNV" id="KUH-oJ-ayd"/>
+                <outlet property="lblName" destination="2Ob-Cc-0KZ" id="5fb-H1-xwh"/>
+                <outlet property="msgStatusImg" destination="8RN-tN-a6h" id="Tzi-XK-94P"/>
+            </connections>
             <point key="canvasLocation" x="-144.27480916030532" y="-6.6901408450704229"/>
         </tableViewCell>
     </objects>
@@ -82,7 +101,7 @@
         <image name="chevron.right" catalog="system" width="97" height="128"/>
         <image name="person.crop.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="secondaryLabelColor">
-            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
