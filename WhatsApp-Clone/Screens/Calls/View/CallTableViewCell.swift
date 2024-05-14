@@ -8,16 +8,19 @@
 import UIKit
 
 class CallTableViewCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
+    @IBOutlet weak var userImg: UIImageView!
+    @IBOutlet weak var lblUserName: UILabel!
+    @IBOutlet weak var lblCallType: UILabel!
+    @IBOutlet weak var lblDate: UILabel!
+    
+    var callData: CallsModel?{
+        didSet{
+            userImg.image = callData?.userImg
+            lblUserName.text = callData?.userName
+            lblUserName.textColor = (callData?.callType == .missed) ? .systemRed : .label
+            lblCallType.text = callData?.callType.rawValue
+            lblDate.text = callData?.date
+        }
+    }
 }

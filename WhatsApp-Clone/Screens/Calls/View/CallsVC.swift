@@ -16,9 +16,26 @@ class CallsVC: UIViewController {
         }
     }
     
+    var calls = [CallsModel](){
+        didSet{
+            callsTableView.reloadData()
+        }
+    }
+    let viewModel = CallsViewModel()
+    
+//MARK:- View Life Cycles
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        segmentBtn(callSegment)
+    }
+    
+//MARK:- IBActions
+    @IBAction func segmentBtn(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0{
+            self.calls = self.viewModel.allCalls
+        }else{
+            self.calls = viewModel.allCalls.filter { $0.callType == .missed }
+        }
     }
     
     @IBAction func editCallBtnClick(_ sender: UIBarButtonItem) {
@@ -34,13 +51,14 @@ class CallsVC: UIViewController {
 
 extension CallsVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return calls.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: CallTableViewCell.id, for: indexPath) as? CallTableViewCell else{
             fatalError()
         }
+        cell.callData = calls[indexPath.row]
         return cell
     }
 }

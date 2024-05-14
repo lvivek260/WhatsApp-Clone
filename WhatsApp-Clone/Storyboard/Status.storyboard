@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--StatusVC-->
+        <!--Status-->
         <scene sceneID="aqF-t7-nob">
             <objects>
                 <viewController storyboardIdentifier="StatusVC" id="Of2-bE-vMY" customClass="StatusVC" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="7Bj-be-djy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="r9Q-Kk-LkY"/>
+                    <navigationItem key="navigationItem" title="Status" id="r9Q-Kk-LkY">
+                        <barButtonItem key="leftBarButtonItem" title="Privacy" id="MjC-3B-cmA"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HVY-R5-iQK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -48,8 +48,11 @@
                                 <segment title="All"/>
                                 <segment title="Missed"/>
                             </segments>
+                            <connections>
+                                <action selector="segmentBtn:" destination="x6R-EJ-bKP" eventType="valueChanged" id="lf3-rM-Kkc"/>
+                            </connections>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" title="Clear" id="xgS-4n-iH2"/>
+                        <barButtonItem key="rightBarButtonItem" title="Clear" image="phone.badge.plus" catalog="system" id="xgS-4n-iH2"/>
                     </navigationItem>
                     <connections>
                         <outlet property="callSegment" destination="Mvt-bj-Kbk" id="NRM-YU-FoF"/>
@@ -83,6 +86,7 @@
     </scenes>
     <resources>
         <image name="phone" catalog="system" width="128" height="115"/>
+        <image name="phone.badge.plus" catalog="system" width="126" height="128"/>
         <image name="phone.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
