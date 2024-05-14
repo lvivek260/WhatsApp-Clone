@@ -373,7 +373,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="362.66666666666669" height="69.333335876464844"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
-                                        <listContentConfiguration key="contentConfiguration" style="sidebarCell" text="Sabohiddin" secondaryText="Digital goodies designer - Pixsellz" image="StatusSelected" imageToTextPadding="16"/>
+                                        <listContentConfiguration key="contentConfiguration" style="sidebarCell" text="Lokhande Vivek" secondaryText="iOS Developer at PHN Technology" image="person.fill" catalog="system" imageToTextPadding="16"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -805,59 +805,70 @@ on cellular.</string>
                             <tableViewSection id="VUa-7W-P9z">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="8ML-FK-zWG">
-                                        <rect key="frame" x="0.0" y="18" width="393" height="152.66667175292969"/>
+                                        <rect key="frame" x="0.0" y="18" width="393" height="135.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8ML-FK-zWG" id="IIR-g9-ylq">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="152.66667175292969"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="135.33332824707031"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vtD-WQ-Umt">
-                                                    <rect key="frame" x="20" y="40.000000000000007" width="353" height="92.666666666666686"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-lY-O1J">
+                                                    <rect key="frame" x="20" y="29.999999999999993" width="353" height="95.333333333333314"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-lY-O1J">
-                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="92.666666666666671"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="vtD-WQ-Umt">
+                                                            <rect key="frame" x="0.0" y="0.0" width="287" height="60"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StatusUnselected" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-5K-D94">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="myImage" translatesAutoresizingMaskIntoConstraints="NO" id="1qc-5K-D94">
                                                                     <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="60" id="HVd-Dx-UIt"/>
-                                                                        <constraint firstAttribute="height" constant="60" id="V6e-M8-PVN"/>
+                                                                        <constraint firstAttribute="height" constant="60" id="V6e-M8-PVN">
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="30"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </constraint>
                                                                     </constraints>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                            <integer key="value" value="30"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
                                                                 </imageView>
-                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-nZ-JHG">
-                                                                    <rect key="frame" x="0.0" y="63.999999999999993" width="60" height="28.666666666666664"/>
-                                                                    <state key="normal" title="Button"/>
-                                                                    <buttonConfiguration key="configuration" style="plain" title="Edit">
-                                                                        <fontDescription key="titleFontDescription" type="system" pointSize="0.0"/>
-                                                                    </buttonConfiguration>
-                                                                </button>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name and add an optional profile picture" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdd-wo-t89">
+                                                                    <rect key="frame" x="76" y="0.0" width="211" height="60"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your name and add an optional profile picture" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdd-wo-t89">
-                                                            <rect key="frame" x="76" y="0.0" width="277" height="92.666666666666671"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <color key="textColor" systemColor="secondaryLabelColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh3-nZ-JHG">
+                                                            <rect key="frame" x="0.0" y="64" width="53" height="31.333333333333329"/>
+                                                            <state key="normal" title="Button"/>
+                                                            <buttonConfiguration key="configuration" style="plain" title=" Edit">
+                                                                <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                            </buttonConfiguration>
+                                                        </button>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="vtD-WQ-Umt" firstAttribute="leading" secondItem="IIR-g9-ylq" secondAttribute="leading" constant="20" id="827-BD-GRy"/>
-                                                <constraint firstAttribute="bottom" secondItem="vtD-WQ-Umt" secondAttribute="bottom" constant="20" id="SqJ-zz-DAv"/>
-                                                <constraint firstItem="vtD-WQ-Umt" firstAttribute="top" secondItem="IIR-g9-ylq" secondAttribute="top" constant="40" id="Vf2-wu-8EI"/>
-                                                <constraint firstAttribute="trailing" secondItem="vtD-WQ-Umt" secondAttribute="trailing" constant="20" id="g9l-gP-ewi"/>
+                                                <constraint firstItem="Paa-lY-O1J" firstAttribute="leading" secondItem="IIR-g9-ylq" secondAttribute="leading" constant="20" id="PHz-9h-TpK"/>
+                                                <constraint firstAttribute="trailing" secondItem="Paa-lY-O1J" secondAttribute="trailing" constant="20" id="RFr-6F-Q1I"/>
+                                                <constraint firstAttribute="bottom" secondItem="Paa-lY-O1J" secondAttribute="bottom" constant="10" id="lBo-Pl-BYc"/>
+                                                <constraint firstItem="Paa-lY-O1J" firstAttribute="top" secondItem="IIR-g9-ylq" secondAttribute="top" constant="30" id="o58-df-zx2"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="IUr-Wy-gSV" style="IBUITableViewCellStyleDefault" id="HdY-J0-To5">
-                                        <rect key="frame" x="0.0" y="170.66667175292969" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="153.33332824707031" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HdY-J0-To5" id="2E8-w9-lFH">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Sabohiddin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IUr-Wy-gSV">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Lokhande Vivek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IUr-Wy-gSV">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -872,13 +883,13 @@ on cellular.</string>
                             <tableViewSection headerTitle="Phone number" id="jxR-jK-KWv">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="QBI-wc-dON" style="IBUITableViewCellStyleDefault" id="HD5-e6-TYs">
-                                        <rect key="frame" x="0.0" y="270.33333969116211" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="252.99999618530273" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HD5-e6-TYs" id="nm6-bO-ejW">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+998 90 943 32 00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QBI-wc-dON">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="+91 8421304231" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="QBI-wc-dON">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -893,13 +904,13 @@ on cellular.</string>
                             <tableViewSection headerTitle="About" id="ZD5-il-mkl">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="cza-UH-mIO" style="IBUITableViewCellStyleDefault" id="2sj-n0-dt3">
-                                        <rect key="frame" x="0.0" y="370.00000762939453" width="393" height="43.666667938232422"/>
+                                        <rect key="frame" x="0.0" y="352.66666412353516" width="393" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2sj-n0-dt3" id="JY5-fl-HDR">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Digital goodies designer - Pixsellz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cza-UH-mIO">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="iOS Developer at PHN Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cza-UH-mIO">
                                                     <rect key="frame" x="20" y="0.0" width="353" height="43.666667938232422"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -1065,10 +1076,10 @@ on cellular.</string>
         <image name="SettingUnselected" width="25" height="25"/>
         <image name="Starred Messages" width="29" height="29"/>
         <image name="StarredMessagesDetail" width="140" height="138"/>
-        <image name="StatusSelected" width="27" height="26"/>
-        <image name="StatusUnselected" width="27" height="26"/>
         <image name="Tell a Friend" width="29" height="29"/>
         <image name="WhatsApp WebDesktop" width="29" height="29"/>
+        <image name="myImage" width="1080" height="1080"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

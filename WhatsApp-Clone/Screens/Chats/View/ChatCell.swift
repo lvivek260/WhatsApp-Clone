@@ -8,6 +8,12 @@
 import UIKit
 
 class ChatCell: UITableViewCell {
+    
+    var chat: ChatModel?{
+        didSet{
+            guard let chat else { return }
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

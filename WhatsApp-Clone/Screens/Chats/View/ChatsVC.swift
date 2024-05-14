@@ -15,6 +15,8 @@ class ChatsVC: UIViewController {
         }
     }
     
+    let viewModel = ChatViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,13 +26,14 @@ class ChatsVC: UIViewController {
 
 extension ChatsVC: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.chats.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ChatCell.id, for: indexPath) as? ChatCell else{
             fatalError()
         }
+        cell.chat = viewModel.chats[indexPath.row]
         return cell
     }
 }
@@ -75,5 +78,11 @@ extension ChatsVC: UITableViewDelegate{
         alert.addAction(deleteChatBtn)
         alert.addAction(cancelBtn)
         present(alert, animated: true)
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chatDetailVC = AppStoryboard.chats.getViewController(ChatDetailVC.self)
+        chatDetailVC.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(chatDetailVC, animated: true)
     }
 }

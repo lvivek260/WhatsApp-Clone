@@ -46,6 +46,27 @@
             </objects>
             <point key="canvasLocation" x="-370" y="1689"/>
         </scene>
+        <!--Chat DetailVC-->
+        <scene sceneID="LYv-Rd-LTy">
+            <objects>
+                <viewController storyboardIdentifier="ChatDetailVC" id="ROE-W2-M1M" customClass="ChatDetailVC" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dOo-Xw-b8y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="h7m-nT-yFc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aCX-4V-Zfz">
+                        <rightBarButtonItems>
+                            <barButtonItem image="phone" catalog="system" id="wau-Cr-KDb"/>
+                            <barButtonItem title="Item" image="video" catalog="system" id="J8Z-BQ-G8u"/>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dJL-UC-0ML" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="582.44274809160299" y="2345.7746478873241"/>
+        </scene>
         <!--Chats-->
         <scene sceneID="o5j-JA-SRU">
             <objects>
@@ -66,10 +87,30 @@
             </objects>
             <point key="canvasLocation" x="-369" y="882"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fp4-1u-Cwg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cGE-N5-Bt7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tyY-J1-ggl">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ROE-W2-M1M" kind="relationship" relationship="rootViewController" id="P8D-yl-TNo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c8a-qO-MaO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-341.2213740458015" y="2345.7746478873241"/>
+        </scene>
     </scenes>
     <resources>
         <image name="chatTabSelected" width="31" height="21"/>
         <image name="chatTabUnselected" width="31" height="21"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+        <image name="video" catalog="system" width="128" height="82"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

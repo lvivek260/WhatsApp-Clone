@@ -75,7 +75,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="-144" y="-6"/>
+            <point key="canvasLocation" x="-144.27480916030532" y="-6.6901408450704229"/>
         </tableViewCell>
     </objects>
     <resources>
