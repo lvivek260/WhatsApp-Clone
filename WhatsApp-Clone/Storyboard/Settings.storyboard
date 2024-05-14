@@ -28,7 +28,7 @@
         <scene sceneID="SgR-Qx-Qem">
             <objects>
                 <navigationController storyboardIdentifier="SettingsNav" automaticallyAdjustsScrollViewInsets="NO" id="ALB-0P-G1k" customClass="SettingsNav" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" image="gearshape" catalog="system" selectedImage="gearshape.fill" id="7cs-1g-sSq"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="SettingUnselected" selectedImage="SettingSelected" id="7cs-1g-sSq"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="efe-1O-7hz">
@@ -46,8 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gearshape" catalog="system" width="128" height="123"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="123"/>
+        <image name="SettingSelected" width="25" height="25"/>
+        <image name="SettingUnselected" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

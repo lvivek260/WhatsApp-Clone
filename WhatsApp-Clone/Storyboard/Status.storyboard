@@ -28,7 +28,7 @@
         <scene sceneID="WOk-9z-iWb">
             <objects>
                 <navigationController storyboardIdentifier="StatusNav" automaticallyAdjustsScrollViewInsets="NO" id="YYF-hw-qhp" customClass="StatusNav" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Status" image="circle.dashed" catalog="system" selectedImage="circle.dashed.inset.filled" id="QPM-qV-uTa"/>
+                    <tabBarItem key="tabBarItem" title="Status" image="StatusUnselected" selectedImage="StatusSelected" id="QPM-qV-uTa"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ClZ-UX-t8h">
@@ -46,8 +46,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle.dashed" catalog="system" width="128" height="123"/>
-        <image name="circle.dashed.inset.filled" catalog="system" width="128" height="123"/>
+        <image name="StatusSelected" width="27" height="26"/>
+        <image name="StatusUnselected" width="27" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

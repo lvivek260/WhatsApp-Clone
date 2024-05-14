@@ -142,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Login Nav-->
         <scene sceneID="DGO-s3-Lgm">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aav-I0-X57" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="LoginNav" automaticallyAdjustsScrollViewInsets="NO" id="aav-I0-X57" customClass="LoginNav" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O5k-ml-UeM">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -162,7 +162,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.right" catalog="system" width="32" height="32"/>
+        <image name="chevron.right" catalog="system" width="97" height="128"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

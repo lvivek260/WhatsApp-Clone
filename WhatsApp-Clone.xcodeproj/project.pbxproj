@@ -39,6 +39,9 @@
 		1FCA78242BF215500052FDA7 /* SettingsNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78232BF215500052FDA7 /* SettingsNav.swift */; };
 		1FCA78282BF21A000052FDA7 /* CallTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78262BF21A000052FDA7 /* CallTableViewCell.swift */; };
 		1FCA78292BF21A000052FDA7 /* CallTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78272BF21A000052FDA7 /* CallTableViewCell.xib */; };
+		1FCF88722BF32870008AA81D /* ChatCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FCF88712BF32870008AA81D /* ChatCell.xib */; };
+		1FCF88732BF32870008AA81D /* ChatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF88702BF32870008AA81D /* ChatCell.swift */; };
+		1FCF88752BF334DF008AA81D /* LoginNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCF88742BF334DF008AA81D /* LoginNav.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +79,9 @@
 		1FCA78232BF215500052FDA7 /* SettingsNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsNav.swift; sourceTree = "<group>"; };
 		1FCA78262BF21A000052FDA7 /* CallTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTableViewCell.swift; sourceTree = "<group>"; };
 		1FCA78272BF21A000052FDA7 /* CallTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallTableViewCell.xib; sourceTree = "<group>"; };
+		1FCF88702BF32870008AA81D /* ChatCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCell.swift; sourceTree = "<group>"; };
+		1FCF88712BF32870008AA81D /* ChatCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatCell.xib; sourceTree = "<group>"; };
+		1FCF88742BF334DF008AA81D /* LoginNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNav.swift; sourceTree = "<group>"; };
 		2D9634B22E76A8D1A304125E /* Pods_WhatsApp_Clone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsApp_Clone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D8ED44401A3D22AE58D11DD /* Pods-WhatsApp-Clone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp-Clone.release.xcconfig"; path = "Target Support Files/Pods-WhatsApp-Clone/Pods-WhatsApp-Clone.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -227,6 +233,7 @@
 			children = (
 				1F234F142BF1E06700228C4D /* LoginVC.swift */,
 				1F234F332BF1F06B00228C4D /* LoginViewModel.swift */,
+				1FCF88742BF334DF008AA81D /* LoginNav.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -245,6 +252,8 @@
 			children = (
 				1FCA78212BF215400052FDA7 /* ChatsNav.swift */,
 				1FCA78172BF214410052FDA7 /* ChatsVC.swift */,
+				1FCF88702BF32870008AA81D /* ChatCell.swift */,
+				1FCF88712BF32870008AA81D /* ChatCell.xib */,
 			);
 			path = Chats;
 			sourceTree = "<group>";
@@ -359,6 +368,7 @@
 				1FCA78072BF211630052FDA7 /* Camera.storyboard in Resources */,
 				1FCA78092BF211740052FDA7 /* Chats.storyboard in Resources */,
 				1F234F1D2BF1E06B00228C4D /* Base in Resources */,
+				1FCF88722BF32870008AA81D /* ChatCell.xib in Resources */,
 				1FCA78052BF211520052FDA7 /* Calls.storyboard in Resources */,
 				1FCA78032BF211400052FDA7 /* Status.storyboard in Resources */,
 				1FCA780B2BF2118B0052FDA7 /* Settings.storyboard in Resources */,
@@ -429,6 +439,8 @@
 				1FCA78222BF215400052FDA7 /* ChatsNav.swift in Sources */,
 				1F234F382BF1F6C300228C4D /* TabBarController.swift in Sources */,
 				1F234F132BF1E06700228C4D /* SceneDelegate.swift in Sources */,
+				1FCF88732BF32870008AA81D /* ChatCell.swift in Sources */,
+				1FCF88752BF334DF008AA81D /* LoginNav.swift in Sources */,
 				1FCA78142BF214180052FDA7 /* CallsVC.swift in Sources */,
 				1F234F3E2BF1F72F00228C4D /* UIViewController+Extension.swift in Sources */,
 				1FCA78162BF214340052FDA7 /* CameraVC.swift in Sources */,

@@ -15,13 +15,32 @@
                     <view key="view" contentMode="scaleToFill" id="4Dk-yW-85T">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Uu5-cc-yRI">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="qzR-oN-xKt" id="qBH-ro-vqP"/>
+                                    <outlet property="delegate" destination="qzR-oN-xKt" id="5tO-Fd-Ha4"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UrH-eW-uzf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="UrH-eW-uzf" firstAttribute="trailing" secondItem="Uu5-cc-yRI" secondAttribute="trailing" id="Pgx-9q-hKo"/>
+                            <constraint firstItem="UrH-eW-uzf" firstAttribute="bottom" secondItem="Uu5-cc-yRI" secondAttribute="bottom" id="bAS-m9-ZRM"/>
+                            <constraint firstItem="Uu5-cc-yRI" firstAttribute="top" secondItem="UrH-eW-uzf" secondAttribute="top" id="cGZ-QQ-3eb"/>
+                            <constraint firstItem="Uu5-cc-yRI" firstAttribute="leading" secondItem="UrH-eW-uzf" secondAttribute="leading" id="nsP-Jb-ACO"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chats" id="oKd-id-p9n">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="bhJ-Os-AoM"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="compose" id="i07-xY-LvK"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chatTblView" destination="Uu5-cc-yRI" id="UAm-dN-2Rc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASb-da-1uT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -31,7 +50,7 @@
         <scene sceneID="o5j-JA-SRU">
             <objects>
                 <navigationController storyboardIdentifier="ChatsNav" automaticallyAdjustsScrollViewInsets="NO" id="y0b-Sy-Gvw" customClass="ChatsNav" customModule="WhatsApp_Clone" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Chats" image="message.badge.rtl" catalog="system" selectedImage="message.badge.filled.fill.rtl" id="By3-e5-aoe"/>
+                    <tabBarItem key="tabBarItem" title="Chats" image="chatTabUnselected" selectedImage="chatTabSelected" id="By3-e5-aoe"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pbx-jr-h2R">
@@ -49,8 +68,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="message.badge.filled.fill.rtl" catalog="system" width="128" height="122"/>
-        <image name="message.badge.rtl" catalog="system" width="128" height="122"/>
+        <image name="chatTabSelected" width="31" height="21"/>
+        <image name="chatTabUnselected" width="31" height="21"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
