@@ -12,6 +12,8 @@ class ChatDetailHeader: UIView {
     @IBOutlet weak var profileImg: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     
+    var refrenceVC: UIViewController?
+    
     var chatData: ChatModel?{
         didSet{
             profileImg.image = chatData?.image
@@ -33,5 +35,13 @@ class ChatDetailHeader: UIView {
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [ .flexibleHeight, .flexibleWidth ]
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(containerViewTapped))
+        containerView.addGestureRecognizer(tap)
+    }
+    
+    @objc func containerViewTapped(){
+        let contactInfo = AppStoryboard.chats.getViewController(ContactInfoTblVC.self)
+        refrenceVC?.navigationController?.pushViewController(contactInfo, animated: true)
     }
 }

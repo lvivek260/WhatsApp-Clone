@@ -24,12 +24,14 @@
 		1F234F3E2BF1F72F00228C4D /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F234F3C2BF1F72F00228C4D /* UIViewController+Extension.swift */; };
 		1F8D38072BF397D600B3E686 /* CallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D38062BF397D600B3E686 /* CallsViewModel.swift */; };
 		1F8D38092BF3981000B3E686 /* CallsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D38082BF3981000B3E686 /* CallsModel.swift */; };
+		1FAA0C0A2BF48D4900E75BBF /* ContactInfoTblVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA0C092BF48D4900E75BBF /* ContactInfoTblVC.swift */; };
+		1FAA0C0C2BF49BAF00E75BBF /* StatusTblVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA0C0B2BF49BAF00E75BBF /* StatusTblVC.swift */; };
+		1FAA0C0E2BF4B55300E75BBF /* EditContactVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA0C0D2BF4B55300E75BBF /* EditContactVC.swift */; };
 		1FCA78032BF211400052FDA7 /* Status.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78022BF211400052FDA7 /* Status.storyboard */; };
 		1FCA78052BF211520052FDA7 /* Calls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78042BF211520052FDA7 /* Calls.storyboard */; };
 		1FCA78072BF211630052FDA7 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78062BF211630052FDA7 /* Camera.storyboard */; };
 		1FCA78092BF211740052FDA7 /* Chats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA78082BF211740052FDA7 /* Chats.storyboard */; };
 		1FCA780B2BF2118B0052FDA7 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA780A2BF2118B0052FDA7 /* Settings.storyboard */; };
-		1FCA78122BF214070052FDA7 /* StatusVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78112BF214070052FDA7 /* StatusVC.swift */; };
 		1FCA78142BF214180052FDA7 /* CallsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78132BF214180052FDA7 /* CallsVC.swift */; };
 		1FCA78162BF214340052FDA7 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78152BF214340052FDA7 /* CameraVC.swift */; };
 		1FCA78182BF214410052FDA7 /* ChatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA78172BF214410052FDA7 /* ChatsVC.swift */; };
@@ -77,12 +79,14 @@
 		1F8D38062BF397D600B3E686 /* CallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsViewModel.swift; sourceTree = "<group>"; };
 		1F8D38082BF3981000B3E686 /* CallsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsModel.swift; sourceTree = "<group>"; };
 		1F9EA635DA885C2963509C7D /* Pods-WhatsApp-Clone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsApp-Clone.debug.xcconfig"; path = "Target Support Files/Pods-WhatsApp-Clone/Pods-WhatsApp-Clone.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAA0C092BF48D4900E75BBF /* ContactInfoTblVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoTblVC.swift; sourceTree = "<group>"; };
+		1FAA0C0B2BF49BAF00E75BBF /* StatusTblVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTblVC.swift; sourceTree = "<group>"; };
+		1FAA0C0D2BF4B55300E75BBF /* EditContactVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContactVC.swift; sourceTree = "<group>"; };
 		1FCA78022BF211400052FDA7 /* Status.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Status.storyboard; sourceTree = "<group>"; };
 		1FCA78042BF211520052FDA7 /* Calls.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Calls.storyboard; sourceTree = "<group>"; };
 		1FCA78062BF211630052FDA7 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
 		1FCA78082BF211740052FDA7 /* Chats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chats.storyboard; sourceTree = "<group>"; };
 		1FCA780A2BF2118B0052FDA7 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		1FCA78112BF214070052FDA7 /* StatusVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusVC.swift; sourceTree = "<group>"; };
 		1FCA78132BF214180052FDA7 /* CallsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallsVC.swift; sourceTree = "<group>"; };
 		1FCA78152BF214340052FDA7 /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		1FCA78172BF214410052FDA7 /* ChatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatsVC.swift; sourceTree = "<group>"; };
@@ -328,7 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				1FCA781B2BF215050052FDA7 /* StatusNav.swift */,
-				1FCA78112BF214070052FDA7 /* StatusVC.swift */,
+				1FAA0C0B2BF49BAF00E75BBF /* StatusTblVC.swift */,
 			);
 			path = Status;
 			sourceTree = "<group>";
@@ -362,6 +366,8 @@
 				1FCF88712BF32870008AA81D /* ChatCell.xib */,
 				1FCF88862BF37F0F008AA81D /* ChatDetailHeader.swift */,
 				1FCF88872BF37F0F008AA81D /* ChatDetailHeader.xib */,
+				1FAA0C092BF48D4900E75BBF /* ContactInfoTblVC.swift */,
+				1FAA0C0D2BF4B55300E75BBF /* EditContactVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -509,6 +515,7 @@
 				1FCA78282BF21A000052FDA7 /* CallTableViewCell.swift in Sources */,
 				1F234F3A2BF1F71000228C4D /* AppStoryboard.swift in Sources */,
 				1F234F312BF1ED9300228C4D /* ValidationManager.swift in Sources */,
+				1FAA0C0E2BF4B55300E75BBF /* EditContactVC.swift in Sources */,
 				1F234F152BF1E06700228C4D /* LoginVC.swift in Sources */,
 				1F8D38092BF3981000B3E686 /* CallsModel.swift in Sources */,
 				1FCA781C2BF215050052FDA7 /* StatusNav.swift in Sources */,
@@ -526,6 +533,7 @@
 				1F234F132BF1E06700228C4D /* SceneDelegate.swift in Sources */,
 				1FCF88832BF367AF008AA81D /* EditProfileTblVC.swift in Sources */,
 				1FCF88892BF37F0F008AA81D /* ChatDetailHeader.swift in Sources */,
+				1FAA0C0A2BF48D4900E75BBF /* ContactInfoTblVC.swift in Sources */,
 				1FCF887D2BF34EDA008AA81D /* DataStoragUsageTblVC.swift in Sources */,
 				1FCF88732BF32870008AA81D /* ChatCell.swift in Sources */,
 				1FCF88852BF37D8F008AA81D /* ChatDetailVC.swift in Sources */,
@@ -535,8 +543,8 @@
 				1F234F3E2BF1F72F00228C4D /* UIViewController+Extension.swift in Sources */,
 				1FCF887F2BF36239008AA81D /* AccountTblVC.swift in Sources */,
 				1FCA78162BF214340052FDA7 /* CameraVC.swift in Sources */,
+				1FAA0C0C2BF49BAF00E75BBF /* StatusTblVC.swift in Sources */,
 				1FCF888E2BF385C3008AA81D /* ChatModel.swift in Sources */,
-				1FCA78122BF214070052FDA7 /* StatusVC.swift in Sources */,
 				1FCA78202BF215300052FDA7 /* CameraNav.swift in Sources */,
 				1FCA781E2BF2151A0052FDA7 /* CallsNav.swift in Sources */,
 				1FCF88902BF38725008AA81D /* ChatViewModel.swift in Sources */,

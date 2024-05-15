@@ -18,6 +18,7 @@ class ChatDetailVC: UIViewController {
     private func addNavigationTitleHeaderView(){
         let chatDetailHeader = ChatDetailHeader(frame: .init(x: 0, y: 0, width:  200, height: 100))
         chatDetailHeader.chatData = self.chatData
+        chatDetailHeader.refrenceVC = self
         navigationItem.titleView = chatDetailHeader
     }
 }
