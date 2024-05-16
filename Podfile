@@ -8,6 +8,7 @@ target 'WhatsApp-Clone' do
   # Pods for WhatsApp-Clone
 
   pod 'IQKeyboardManagerSwift'
+  pod 'MessageKit'
   
   post_install do |installer|
     installer.pods_project.targets.each do |target|

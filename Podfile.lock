@@ -1,16 +1,26 @@
 PODS:
+  - InputBarAccessoryView (5.5.0):
+    - InputBarAccessoryView/Core (= 5.5.0)
+  - InputBarAccessoryView/Core (5.5.0)
   - IQKeyboardManagerSwift (6.5.15)
+  - MessageKit (3.8.0):
+    - InputBarAccessoryView (~> 5.5.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - MessageKit
 
 SPEC REPOS:
   trunk:
+    - InputBarAccessoryView
     - IQKeyboardManagerSwift
+    - MessageKit
 
 SPEC CHECKSUMS:
+  InputBarAccessoryView: 1d7b0a672b36e370f01f264b3907ef39d03328e3
   IQKeyboardManagerSwift: 79fab21f451441935788dc5d80ded21c32685904
+  MessageKit: a1ba0c69ebead94029867853eb44dd05b9b3f453
 
-PODFILE CHECKSUM: b815bec7c77c647ba1d038f7112423f0926ac3a5
+PODFILE CHECKSUM: 12d6a545f43b41c546b9ff3a5da0b539733376da
 
 COCOAPODS: 1.11.3

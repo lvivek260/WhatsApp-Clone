@@ -18,6 +18,7 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate & UINavigation
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()
             imagePicker.delegate = self
+            imagePicker.allowsEditing = true
             imagePicker.sourceType = .camera
             self.present(imagePicker, animated: true, completion: nil)
         } else {
@@ -33,6 +34,9 @@ class CameraVC: UIViewController, UIImagePickerControllerDelegate & UINavigation
         self.tabBarController?.selectedIndex = 3
     }
     
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        print(info)
+    }
 }
 
 
