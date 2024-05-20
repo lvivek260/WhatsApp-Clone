@@ -17,6 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         
         let tabBarController = AppStoryboard.main.getViewController(TabBarController.self)
+        let login = AppStoryboard.login.getViewController(LoginNav.self)
+        
         window.rootViewController = tabBarController
         
         self.window = window
