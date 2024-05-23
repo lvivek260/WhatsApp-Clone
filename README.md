@@ -45,4 +45,3 @@ To get this project up and running on your local machine, follow these steps:
 
    ```bash
    git clone https://github.com/lvivek260/WhatsApp-Clone.git
-   cd WhatsAppClone
